@@ -192,7 +192,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-09-04 20:38:35 / 修改时间：21:05:22" itemprop="dateCreated datePublished" datetime="2023-09-04T20:38:35+08:00">2023-09-04</time>
+              <time title="创建时间：2023-09-04 20:38:35 / 修改时间：21:26:57" itemprop="dateCreated datePublished" datetime="2023-09-04T20:38:35+08:00">2023-09-04</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -215,7 +215,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="效果–右下角的兰-但懒得加表情"><a href="#效果–右下角的兰-但懒得加表情" class="headerlink" title="效果–右下角的兰~ 但懒得加表情"></a>效果–右下角的兰~ 但懒得加表情</h1><h1 id="实现目标"><a href="#实现目标" class="headerlink" title="实现目标"></a>实现目标</h1><p> 采用hexo-helper-live2d插件实现<br> 配置添加对话&#x2F;文字功能<br> <a target="_blank" rel="noopener" href="https://github.com/Eikanya/Live2d-model">修改为自己想要的live2d形象</a><br> 接入<a target="_blank" rel="noopener" href="https://huggingface.co/spaces/Mahiruoshi/vits-chatbot">api</a></p>
+          <h1 id="太史公曰：效果–右下角的兰-但懒得加表情"><a href="#太史公曰：效果–右下角的兰-但懒得加表情" class="headerlink" title="太史公曰：效果–右下角的兰~ 但懒得加表情"></a>太史公曰：效果–右下角的兰~ 但懒得加表情</h1><h1 id="太史公曰：实现目标-大饼"><a href="#太史公曰：实现目标-大饼" class="headerlink" title="太史公曰：实现目标+大饼"></a>太史公曰：实现目标+大饼</h1><p> 采用hexo-helper-live2d插件实现<br> 配置添加对话&#x2F;文字功能<br> <a target="_blank" rel="noopener" href="https://github.com/Eikanya/Live2d-model">修改为自己想要的live2d形象</a><br> 接入<a target="_blank" rel="noopener" href="https://huggingface.co/spaces/Mahiruoshi/vits-chatbot">api</a></p>
 <h1 id="hexo-helper-live2d插件安装与配置"><a href="#hexo-helper-live2d插件安装与配置" class="headerlink" title="hexo-helper-live2d插件安装与配置"></a><a target="_blank" rel="noopener" href="https://github.com/EYHN/hexo-helper-live2d">hexo-helper-live2d插件安装与配置</a></h1><h1 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h1><p>在站点根目录下打开终端，输入以下命令</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
 <p>选择并安装模型</p>
@@ -231,9 +231,9 @@
 <p>一些蠢事带来的js脚本调试的尝试记录<br>改完配置之后，设置迟迟没有生效，看了看几个主要的脚本似乎也没什么问题，于是本人初尝了以下js调试。（省略一些绕弯路的步骤）</p>
 <p>hexo s之后，打开localhost:4000</p>
 <p>打开开发者模式-源代码，（省略一些搜索dial..的步骤），打开了webpack:&#x2F;&#x2F;.&#x2F;src&#x2F;utils&#x2F;elementMgr.js文件（也不一定是这个）</p>
-<p><img src="https://gitee.com/Augu1sto/imageHost/raw/master/BlogImg/202112151808722.png"><br>设置断点，刷新</p>
+<p><img src="/images/2023(9)/202112151808722.png"><br>设置断点，刷新</p>
 <p>鼠标放在config上，同志们。。我打错变量名了。。是dialog不是dialogue</p>
-<p><img src="https://gitee.com/Augu1sto/imageHost/raw/master/BlogImg/202112151810626.png"></p>
+<p><img src="/images/2023(9)/202112151810626.png"></p>
 <p>被自己蠢到，但也算尝试了一下调试的基础。。嗯。。</p>
 <h1 id="自定义文本"><a href="#自定义文本" class="headerlink" title="自定义文本"></a>自定义文本</h1><p>解决方案<br>修改配置文件_config.yml</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true # 是否启用看板娘</span><br><span class="line">  dialog:</span><br><span class="line">    enable: true</span><br><span class="line">    # hitokoto: true</span><br><span class="line">    text:</span><br><span class="line">      - 汪</span><br><span class="line">      - 汪汪</span><br><span class="line">      - 汪呜</span><br></pre></td></tr></table></figure>
@@ -242,10 +242,10 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function randomSelection(obj) &#123;</span><br><span class="line">  return Array.isArray(obj) ? obj[Math.floor(Math.random() * obj.length)] : obj;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function showMessage(text, timeout, priority) &#123;</span><br><span class="line">  if (!text || (sessionStorage.getItem(&quot;mytext&quot;) &amp;&amp; sessionStorage.getItem(&quot;mytext&quot;) &gt; priority)) return;</span><br><span class="line">  text = randomSelection(text);</span><br><span class="line">  sessionStorage.setItem(&quot;mytext&quot;, priority);</span><br><span class="line">  alertText(text)</span><br><span class="line">  setTimeout(() =&gt; &#123;</span><br><span class="line">    sessionStorage.removeItem(&quot;mytext&quot;);</span><br><span class="line">  &#125;, timeout);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>并添加对此函数的调用</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function createDialogElement(root) &#123;</span><br><span class="line">// ......</span><br><span class="line"></span><br><span class="line">  if (config.dialog.hitokoto)</span><br><span class="line">    showHitokotoLoop()</span><br><span class="line">  else //从这里开始增加</span><br><span class="line">    setInterval(() =&gt; &#123;</span><br><span class="line">      showMessage(randomSelection(config.dialog.text), 4000, 9);</span><br><span class="line">  &#125;, 10000)//增加了这一行</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//......</span><br><span class="line">module.exports = &#123;</span><br><span class="line">  createDialogElement, displayDialog, hiddenDialog, alertText, showHitokotoLoop, showMessage, randomSelection</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="webpack打包"><a href="#webpack打包" class="headerlink" title="webpack打包"></a>webpack打包</h1><p>在live2d-widget下安装webpack包： npm install –save-dev <a href="mailto:&#119;&#101;&#x62;&#112;&#x61;&#99;&#107;&#64;&#x33;&#46;&#x31;&#x30;&#46;&#x30;">&#119;&#101;&#x62;&#112;&#x61;&#99;&#107;&#64;&#x33;&#46;&#x31;&#x30;&#46;&#x30;</a></p>
+<h1 id="webpack打包"><a href="#webpack打包" class="headerlink" title="webpack打包"></a>webpack打包</h1><p>在live2d-widget下安装webpack包： npm install –save-dev <a href="mailto:&#x77;&#101;&#98;&#112;&#x61;&#x63;&#107;&#x40;&#51;&#x2e;&#49;&#x30;&#46;&#48;">&#x77;&#101;&#98;&#112;&#x61;&#x63;&#107;&#x40;&#51;&#x2e;&#49;&#x30;&#46;&#48;</a></p>
 <p>webpack版本很重要，参考.\live2d-widget\package.json<br>命令行输入.&#x2F;node_modules&#x2F;.bin&#x2F;webpack</p>
 <p>讲道理可以照package.json的提示输入，npm run build:prod之类的命令，但会报错（应该改改路径就可以了？）</p>
-<p><img src="https://gitee.com/Augu1sto/imageHost/raw/master/BlogImg/202112152136660.png"></p>
+<p><img src="/images/2023(9)/202112152136660.png"></p>
 <h1 id="过程：阅读源码并修改"><a href="#过程：阅读源码并修改" class="headerlink" title="过程：阅读源码并修改"></a>过程：阅读源码并修改</h1><p>关于<a target="_blank" rel="noopener" href="https://github.com/EYHN/hexo-helper-live2d/issues/137">waifu-tips.js · Issue #137</a>这个issue中并没有提及如何自定义文本的问题，于是就先来读一读源码</p>
 <p>有关对话框的源代码在[Blogroot]\node_modules\live2d-widget\src\dialog\index.js下</p>
 <p>_config.yml里的设置经过一系列传参到index.js中，变成了config对象</p>
@@ -265,7 +265,7 @@
 <p>众所周知，邦邦有邦邦人制作的神器 Live2D浏览器 | Bestdori! BanG Dream 少女乐团派对的最佳资源库，可以查看相应活动的live2d形象</p>
 <p>方法一：可以在上面的github库中的邦邦文件夹的1~35分别代表的各个角色，比如户川香澄就是1，[001_live_event_102_ssr](<a target="_blank" rel="noopener" href="https://github.com/Eikanya/Live2d-model/tree/master/BanG">https://github.com/Eikanya/Live2d-model/tree/master/BanG</a> Dream!&#x2F;asneeded&#x2F;live2d&#x2F;chara&#x2F;001&#x2F;001_live_event_102_ssr)就是第102次活动的ssr卡</p>
 <p>方法二：该github库到炮姐联动之后就没有更新了，但是我们有bestdori!在 <a target="_blank" rel="noopener" href="https://bestdori.com/tool/live2d">Live2D浏览器</a>中点击左上角可以直接获得卡面路径</p>
-<p><img src="https://gitee.com/Augu1sto/imageHost/raw/master/BlogImg/202112161051329.png"></p>
+<p><img src="/images/2023(9)/202112161051329.png"></p>
 <p>然后去<a target="_blank" rel="noopener" href="https://bestdori.com/tool/explorer/asset">数据包浏览器</a>里找到相应路径就可以下载了，是不是很简单，快去试试吧！</p>
 <h1 id="配置动作"><a href="#配置动作" class="headerlink" title="配置动作"></a>配置动作</h1><p>Json配置 - <a target="_blank" rel="noopener" href="https://live2d.pavostudio.com/doc/zh-cn/live2d/model-config/">Live2DViewerEX文档 (pavostudio.com)</a></p>
 <p>问题：不知道模型建立的时候的区域ID，没办法设置hit_area，js代码里也没有对于tap的单独设置，因此只能把动作全部加到json文件里</p>
@@ -274,65 +274,6 @@
 <p>可以用命令npm install live2d-widget-model-kasumi安装</p>
 <p>后续<br>这个插件功能还是弱了一点，因为本人对js也不是特别数，后面可能会对项目<a target="_blank" rel="noopener" href="https://github.com/stevenjoezhang/live2d-widget">stevenjoezhang&#x2F;live2d-widget: 把萌萌哒的看板娘抱回家 (ノ≧∇≦)ノ | Live2D widget for web platform (github.com)</a>魔改</p>
 <p>文章作者: Augu1sto<br>文章链接: <a target="_blank" rel="noopener" href="https://augu1sto.gitee.io/ee36c104ddd2/">https://augu1sto.gitee.io/ee36c104ddd2/</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/04/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/anon.jpg">
-      <meta itemprop="name" content="Mahiroshi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="求求你去看Mygo吧QAQ">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/04/hello-world/" class="post-title-link" itemprop="url">About me</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-09-04 18:38:26 / 修改时间：20:40:08" itemprop="dateCreated datePublished" datetime="2023-09-04T18:38:26+08:00">2023-09-04</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>b站<a target="_blank" rel="noopener" href="https://space.bilibili.com/19874615?spm_id_from=333.1007.0.0">@Mahiroshi</a><br>QQ: 2429304786<br>Telegram: zjh271838<br>Wechat: PUREJIAH</p>
 
       
     </div>
@@ -375,10 +316,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-09-03 22:54:26 / 修改时间：23:32:41" itemprop="dateCreated datePublished" datetime="2023-09-03T22:54:26+08:00">2023-09-03</time>
+              <time title="创建时间：2023-09-03 22:54:26" itemprop="dateCreated datePublished" datetime="2023-09-03T22:54:26+08:00">2023-09-03</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-09-04 21:23:46" itemprop="dateModified" datetime="2023-09-04T21:23:46+08:00">2023-09-04</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -400,7 +347,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="/images/muzimi.jpg"><br>这个睦素是作者在第12集播出之前写的，看完第12集之后作者甜甜地笑了：是的就是这样，，看似冷漠的soyo才是自觉被辜负而放不下的那一个</p>
+          <p>这个睦素是作者在第12集播出之前写的，看完第12集之后作者甜甜地笑了：是的就是这样，，看似冷漠的soyo才是自觉被辜负而放不下的那一个</p>
 <p>太好吃了请大家都来吃！</p>
 <p>*出于个人喜好使用了“素世”这个译名；包含了一点睦素祥△要素</p>
 <p>↓</p>
@@ -440,6 +387,71 @@
 <p>那高高在上，八风不动的沉默，素世再也无法忍受。就着拽衣领的力，她把睦狠狠推倒在地，按下急促的呼吸，堪称轻柔地吻了上去。</p>
 <p>露水滴落，鸟儿展平羽翼，飞入不再蔚蓝的天空。夏天过去了。</p>
 <p>恋人啊，你沉默时最可爱，也最可恶。 作者：琈涴 <a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv26244946/?from=search&spm_id_from=333.337.0.0">https://www.bilibili.com/read/cv26244946/?from=search&amp;spm_id_from=333.337.0.0</a> 出处：bilibili</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/03/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/anon.jpg">
+      <meta itemprop="name" content="Mahiroshi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="求求你去看Mygo吧QAQ">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/09/03/hello-world/" class="post-title-link" itemprop="url">About me</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-09-03 22:50:26" itemprop="dateCreated datePublished" datetime="2023-09-03T22:50:26+08:00">2023-09-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-09-04 21:20:49" itemprop="dateModified" datetime="2023-09-04T21:20:49+08:00">2023-09-04</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>b站<a target="_blank" rel="noopener" href="https://space.bilibili.com/19874615?spm_id_from=333.1007.0.0">@Mahiroshi</a><br>QQ: 2429304786<br>Telegram: zjh271838<br>Wechat: PUREJIAH</p>
 
       
     </div>
@@ -637,5 +649,5 @@
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?5667da5c496cb4b8f70785d29ef7489a"></script><script>L2Dwidget.init({"dialog":{"enable":true,"text":["一直摸兜里","说谁是不良阿","樱小姐当然会唱歌啦，啊啊啊啊"]},"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/mzl.model.json"},"display":{"superSample":2,"width":300,"height":600,"position":"right","hOffset":20,"vOffset":-100},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?5667da5c496cb4b8f70785d29ef7489a"></script><script>L2Dwidget.init({"dialog":{"enable":true,"text":["一直摸兜里","说谁是不良啊","樱小姐当然会唱歌啦，啊啊啊啊"]},"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/mzl.model.json"},"display":{"superSample":2,"width":300,"height":600,"position":"right","hOffset":20,"vOffset":-100},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
 </html>
