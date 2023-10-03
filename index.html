@@ -192,7 +192,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-10-03 22:00:45 / 修改时间：23:01:08" itemprop="dateCreated datePublished" datetime="2023-10-03T22:00:45+08:00">2023-10-03</time>
+              <time title="创建时间：2023-10-03 22:00:45 / 修改时间：23:02:19" itemprop="dateCreated datePublished" datetime="2023-10-03T22:00:45+08:00">2023-10-03</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -284,7 +284,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-10-01 06:19:14" itemprop="dateModified" datetime="2023-10-01T06:19:14+08:00">2023-10-01</time>
+                <time title="修改时间：2023-10-03 23:04:21" itemprop="dateModified" datetime="2023-10-03T23:04:21+08:00">2023-10-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -307,7 +307,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="前期调查"><a href="#前期调查" class="headerlink" title="前期调查"></a>前期调查</h1><p>由于没有mygo看，我决定炼一个mygo全员的tts模型来给自己造糖吃。回想起之前炼虹团时夙兴夜寐地解析手游资源的痛苦时光。与<a target="_blank" rel="noopener" href="https://karth.top/home">少歌</a>一样，bestdori<a target="_blank" rel="noopener" href="https://bestdori.com/">平台</a>可以省下解包手游的精力。<br><a target="_blank" rel="noopener" href="https://bestdori.com/tool/explorer/asset/jp/scenario/eventstory/event1">游戏脚本</a>中包含了制作数据集所需的所有信息。<br>而存储音频文件的<a target="_blank" rel="noopener" href="https://bestdori.com/tool/explorer/asset/jp/sound/voice/scenario/eventstory1_0">路径</a>也能在平台上找到。<br>我已经快等不及了，快点爬下来把数据集端上来罢。<br>然后我品鉴了一下这令人忍俊不禁的命名方式:</p>
+          <h3 id="爬虫结果"><a href="#爬虫结果" class="headerlink" title="爬虫结果"></a><a target="_blank" rel="noopener" href="https://huggingface.co/spaces/Mahiruoshi/BangDream-Bert-VITS2/tree/main/%E7%88%AC%E8%99%AB">爬虫结果</a></h3><p>直接拿去炼TTS或svc啥的都可以</p>
+<h1 id="前期调查"><a href="#前期调查" class="headerlink" title="前期调查"></a>前期调查</h1><p>由于没有mygo看，我决定炼一个mygo全员的tts模型来给自己造糖吃。回想起之前炼虹团时夙兴夜寐地解析手游资源的痛苦时光。与<a target="_blank" rel="noopener" href="https://karth.top/home">少歌</a>一样，bestdori<a target="_blank" rel="noopener" href="https://bestdori.com/">平台</a>可以省下解包手游的精力。<br><a target="_blank" rel="noopener" href="https://bestdori.com/tool/explorer/asset/jp/scenario/eventstory/event1">游戏脚本</a>中包含了制作数据集所需的所有信息。<br>而存储音频文件的<a target="_blank" rel="noopener" href="https://bestdori.com/tool/explorer/asset/jp/sound/voice/scenario/eventstory1_0">路径</a>也能在平台上找到。<br>我已经快等不及了，快点爬下来把数据集端上来罢。<br>然后我品鉴了一下这令人忍俊不禁的命名方式:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">-scenario</span><br><span class="line">    area_opening_story34</span><br><span class="line">    area_opening_story35</span><br><span class="line">    area_opening_story7</span><br><span class="line">    area_opening_story9</span><br><span class="line">    backstagestory1</span><br><span class="line">    bandstory1</span><br><span class="line">    bandstory10</span><br><span class="line">    bandstory100</span><br><span class="line">    bandstory101</span><br><span class="line">    bandstory102</span><br><span class="line">    bandstory103</span><br><span class="line">    bandstory104</span><br><span class="line">    ......</span><br><span class="line">    eventstory199_3</span><br><span class="line">    eventstory199_4</span><br><span class="line">    eventstory199_5</span><br><span class="line">    eventstory199_6</span><br><span class="line">    eventstory2_0</span><br><span class="line">    eventstory2_1</span><br><span class="line">    eventstory2_2</span><br><span class="line">    eventstory2_3</span><br><span class="line">    eventstory2_4</span><br><span class="line">    eventstory2_5</span><br><span class="line">    ......</span><br></pre></td></tr></table></figure>
 <p>狠狠地切割了。<br>看来是没法通过总结命名方法整到所有音频文件夹的详细地址。那么还是准备暴力破解吧。</p>
 <h1 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h1><p>要用到的python包主要有beautifulsoup4、requests还有selenium。<br>先试着直接解析。</p>
