@@ -198,7 +198,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-10-05 18:16:14" itemprop="dateModified" datetime="2023-10-05T18:16:14+08:00">2023-10-05</time>
+                <time title="修改时间：2023-10-05 19:37:57" itemprop="dateModified" datetime="2023-10-05T19:37:57+08:00">2023-10-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -221,138 +221,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Bang-Dream全员TTS"><a href="#Bang-Dream全员TTS" class="headerlink" title="Bang Dream全员TTS"></a>Bang Dream全员TTS</h1><p>国内服务器代理,仅支持日语,需要等待音频合成：</p>
-<form id="ttsForm">
-    <label for="text">日文文本:</label>
-    <textarea id="text" required></textarea><br>
-
-<pre><code>
-    <label for="speaker">说话人:</label>
-    <select id="speaker">
-            <option value="香澄">香澄</option>
-            <option value="有咲">有咲</option>
-            <option value="沙綾">沙綾</option>
-            <option value="りみ">りみ</option>
-            <option value="たえ">たえ</option>
-            <option value="沙綾、りみ、たえ">沙綾、りみ、たえ</option>
-            <option value="巴">巴</option>
-            <option value="一同">一同</option>
-            <option value="まりな">まりな</option>
-            <option value="ゆり">ゆり</option>
-            <option value="ポピパ一同">ポピパ一同</option>
-            <option value="明日香">明日香</option>
-            <option value="？？？">？？？</option>
-            <option value="オーナー">オーナー</option>
-            <option value="全員">全員</option>
-            <option value="Poppin'Party">Poppin'Party</option>
-            <option value="ひまり">ひまり</option>
-            <option value="モカ">モカ</option>
-            <option value="つぐみ">つぐみ</option>
-            <option value="蘭">蘭</option>
-            <option value="リサ">リサ</option>
-            <option value="千聖">千聖</option>
-            <option value="花音">花音</option>
-            <option value="イヴ">イヴ</option>
-            <option value="日菜">日菜</option>
-            <option value="友希那">友希那</option>
-            <option value="紗夜">紗夜</option>
-            <option value="Afterglow">Afterglow</option>
-            <option value="こころ">こころ</option>
-            <option value="美咲">美咲</option>
-            <option value="薫">薫</option>
-            <option value="はぐみ">はぐみ</option>
-            <option value="ミッシェル">ミッシェル</option>
-            <option value="マリー">マリー</option>
-            <option value="怪盗ハロハッピー">怪盗ハロハッピー</option>
-            <option value="ハロー、ハッピーワールド！">ハロー、ハッピーワールド！</option>
-            <option value="ニコリーナ">ニコリーナ</option>
-            <option value="彩">彩</option>
-            <option value="麻弥">麻弥</option>
-            <option value="パスパレ一同">パスパレ一同</option>
-            <option value="燐子">燐子</option>
-            <option value="あこ">あこ</option>
-            <option value="あこのチャット">あこのチャット</option>
-            <option value="燐子のチャット">燐子のチャット</option>
-            <option value="燐子チャット">燐子チャット</option>
-            <option value="Roselia">Roselia</option>
-            <option value="ゆきな">ゆきな</option>
-            <option value="ましろ">ましろ</option>
-            <option value="つくし" selected>つくし</option>
-            <option value="透子">透子</option>
-            <option value="七深">七深</option>
-            <option value="瑠唯">瑠唯</option>
-             <option value="六花">六花</option>
-            <option value="パレオ">パレオ</option>
-            <option value="レイヤ">レイヤ</option>
-            <option value="マスキング">マスキング</option>
-            <option value="チュチュ">チュチュ</option>
-            <option value="ますき">ますき</option>
-            <option value="ロック">ロック</option>
-            <option value="令王那">令王那</option>
-            <option value="CHIYU">CHIYU</option>
-            <option value="レイ">レイ</option>
-            <option value="詩船">詩船</option>
-            <option value="珠手ちゆ">珠手ちゆ</option>
-            <option value="燈">燈</option>
-            <option value="そよ">そよ</option>
-            <option value="祥子">祥子</option>
-            <option value="立希">立希</option>
-            <option value="睦">睦</option>
-            <option value="愛音">愛音</option>
-            <option value="楽奈">楽奈</option>
-            <option value="海鈴">海鈴</option>`
-</select><br>
-
-    <label for="sdp_ratio">SDP 比例:</label>
-    <input type="number" id="sdp_ratio" step="0.1" value="0.2"><br>
-
-    <label for="noise_scale">噪音比例:</label>
-    <input type="number" id="noise_scale" step="0.1" value="0.6"><br>
-
-    <label for="noise_scale_w">噪音比例宽度:</label>
-    <input type="number" id="noise_scale_w" step="0.1" value="0.8"><br>
-
-    <label for="length_scale">长度比例:</label>
-    <input type="number" id="length_scale" step="0.1" value="1"><br>
-
-    <input type="submit" value="生成音频">
-    
-</code></pre>
-</form>
-
-<p><audio id="audioPlayer" controls></audio></p>
-<script>
-document.getElementById('ttsForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    var text = document.getElementById('text').value;
-    var speaker = document.getElementById('speaker').value;
-    var sdp_ratio = document.getElementById('sdp_ratio').value;
-    var noise_scale = document.getElementById('noise_scale').value;
-    var noise_scale_w = document.getElementById('noise_scale_w').value;
-    var length_scale = document.getElementById('length_scale').value;
-
-    var url = `http://123.207.67.91:8080/tts?text=${encodeURIComponent(text)}&speaker=${encodeURIComponent(speaker)}&sdp_ratio=${sdp_ratio}&noise_scale=${noise_scale}&noise_scale_w=${noise_scale_w}&length_scale=${length_scale}`;
-
-    fetch(url)
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Server response was not ok');
-        }
-        return response.blob();
-    })
-    .then(blob => {
-        var urlObject = window.URL || window.webkitURL;
-        var audioURL = urlObject.createObjectURL(blob);
-        document.getElementById('audioPlayer').src = audioURL;
-    })
-    .catch(error => {
-        console.error('Error fetching audio:', error.message);
-        alert('Error: ' + error.message); 
-    });
-});
-</script>
-
+          <h1 id="Bang-Dream全员TTS"><a href="#Bang-Dream全员TTS" class="headerlink" title="Bang Dream全员TTS"></a>Bang Dream全员TTS</h1><p>国内服务器版,仅支持日语,需要等待加载：</p>
+<iframe src="https://dwurl.cn/o3xX3c" width="100%" height="500" frameborder="0"></iframe>
 
 <p>如果挂了梯子可以直接尝试<a target="_blank" rel="noopener" href="https://huggingface.co/spaces/Mahiruoshi/BangDream-Bert-VITS2">huggingface</a></p>
 <h1 id="使用须知"><a href="#使用须知" class="headerlink" title="使用须知"></a>使用须知</h1><p>由于bert-vits项目才刚刚支持日语，所以稳定度和效果都会有影响。</p>
@@ -366,7 +236,7 @@ document.getElementById('ttsForm').addEventListener('submit', function(e) {
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ましろ|真白</span><br><span class="line">七深|七深</span><br><span class="line">透子|透子</span><br><span class="line">つくし|筑紫</span><br><span class="line">瑠唯|瑠唯</span><br></pre></td></tr></table></figure>
 <h2 id="选择3-读小说-建议本地"><a href="#选择3-读小说-建议本地" class="headerlink" title="选择3:读小说(建议本地)"></a>选择3:读小说(建议本地)</h2><p>支持epub、txt和mobi，但出于稳定性考虑建议先自行用工具转换成txt格式。<br>当然，在网页端是无法完整合成的，确保在本地运行并且安装了gpu支持(也就是cuda和cudnn)。<br>所有音频都会被存储在”BangDream-Bert-VITS2&#x2F;books”文件夹下，记得合成后转移已生成文件，再次合成时将会自动清空。</p>
 <h1 id="本地运行"><a href="#本地运行" class="headerlink" title="本地运行:"></a>本地运行:</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone https://huggingface.co/spaces/Mahiruoshi/BangDream-Bert-VITS2</span><br><span class="line">cd BangDream-Bert-VITS2</span><br><span class="line">pip install -r requirements.txt</span><br><span class="line">python app.py</span><br></pre></td></tr></table></figure>
-<h1 id="样例API-使用说明"><a href="#样例API-使用说明" class="headerlink" title="样例API 使用说明"></a>样例API 使用说明</h1><h2 id="出于安全性考虑，域名备案成功前仅提供Flask启动代码"><a href="#出于安全性考虑，域名备案成功前仅提供Flask启动代码" class="headerlink" title="出于安全性考虑，域名备案成功前仅提供Flask启动代码"></a>出于安全性考虑，域名备案成功前仅提供Flask启动代码</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br></pre></td><td class="code"><pre><span class="line">import sys, os</span><br><span class="line">import logging</span><br><span class="line">from flask import Flask, request, jsonify</span><br><span class="line">logging.getLogger(&quot;numba&quot;).setLevel(logging.WARNING)</span><br><span class="line">logging.getLogger(&quot;markdown_it&quot;).setLevel(logging.WARNING)</span><br><span class="line">logging.getLogger(&quot;urllib3&quot;).setLevel(logging.WARNING)</span><br><span class="line">logging.getLogger(&quot;matplotlib&quot;).setLevel(logging.WARNING)</span><br><span class="line"></span><br><span class="line">logging.basicConfig(</span><br><span class="line">    level=logging.INFO, format=&quot;| %(name)s | %(levelname)s | %(message)s&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">logger = logging.getLogger(__name__)</span><br><span class="line"></span><br><span class="line">import torch</span><br><span class="line">import argparse</span><br><span class="line">import commons</span><br><span class="line">import utils</span><br><span class="line">from models import SynthesizerTrn</span><br><span class="line">from text.symbols import symbols</span><br><span class="line">from text import cleaned_text_to_sequence, get_bert</span><br><span class="line">from text.cleaner import clean_text</span><br><span class="line">import webbrowser</span><br><span class="line"></span><br><span class="line">import io</span><br><span class="line">from scipy.io.wavfile import write</span><br><span class="line"></span><br><span class="line">net_g = None</span><br><span class="line"></span><br><span class="line">if sys.platform == &quot;darwin&quot; and torch.backends.mps.is_available():</span><br><span class="line">    device = &quot;mps&quot;</span><br><span class="line">    os.environ[&quot;PYTORCH_ENABLE_MPS_FALLBACK&quot;] = &quot;1&quot;</span><br><span class="line">else:</span><br><span class="line">    device = &quot;cuda&quot;</span><br><span class="line"></span><br><span class="line">def is_japanese(string):</span><br><span class="line">        for ch in string:</span><br><span class="line">            if ord(ch) &gt; 0x3040 and ord(ch) &lt; 0x30FF:</span><br><span class="line">                return True</span><br><span class="line">        return False</span><br><span class="line"></span><br><span class="line">def get_text(text, language_str, hps):</span><br><span class="line">    norm_text, phone, tone, word2ph = clean_text(text, language_str)</span><br><span class="line">    phone, tone, language = cleaned_text_to_sequence(phone, tone, language_str)</span><br><span class="line"></span><br><span class="line">    if hps.data.add_blank:</span><br><span class="line">        phone = commons.intersperse(phone, 0)</span><br><span class="line">        tone = commons.intersperse(tone, 0)</span><br><span class="line">        language = commons.intersperse(language, 0)</span><br><span class="line">        for i in range(len(word2ph)):</span><br><span class="line">            word2ph[i] = word2ph[i] * 2</span><br><span class="line">        word2ph[0] += 1</span><br><span class="line">    bert = get_bert(norm_text, word2ph, language_str, device)</span><br><span class="line">    del word2ph</span><br><span class="line">    assert bert.shape[-1] == len(phone), phone</span><br><span class="line"></span><br><span class="line">    if language_str == &quot;ZH&quot;:</span><br><span class="line">        bert = bert</span><br><span class="line">        ja_bert = torch.zeros(768, len(phone))</span><br><span class="line">    elif language_str == &quot;JA&quot;:</span><br><span class="line">        ja_bert = bert</span><br><span class="line">        bert = torch.zeros(1024, len(phone))</span><br><span class="line">    else:</span><br><span class="line">        bert = torch.zeros(1024, len(phone))</span><br><span class="line">        ja_bert = torch.zeros(768, len(phone))</span><br><span class="line"></span><br><span class="line">    assert bert.shape[-1] == len(</span><br><span class="line">        phone</span><br><span class="line">    ), f&quot;Bert seq len &#123;bert.shape[-1]&#125; != &#123;len(phone)&#125;&quot;</span><br><span class="line"></span><br><span class="line">    phone = torch.LongTensor(phone)</span><br><span class="line">    tone = torch.LongTensor(tone)</span><br><span class="line">    language = torch.LongTensor(language)</span><br><span class="line">    return bert, ja_bert, phone, tone, language</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def infer(text, sdp_ratio, noise_scale, noise_scale_w, length_scale, sid, language):</span><br><span class="line">    global net_g</span><br><span class="line">    bert, ja_bert, phones, tones, lang_ids = get_text(text, language, hps)</span><br><span class="line">    with torch.no_grad():</span><br><span class="line">        x_tst = phones.to(device).unsqueeze(0)</span><br><span class="line">        tones = tones.to(device).unsqueeze(0)</span><br><span class="line">        lang_ids = lang_ids.to(device).unsqueeze(0)</span><br><span class="line">        bert = bert.to(device).unsqueeze(0)</span><br><span class="line">        ja_bert = ja_bert.to(device).unsqueeze(0)</span><br><span class="line">        x_tst_lengths = torch.LongTensor([phones.size(0)]).to(device)</span><br><span class="line">        del phones</span><br><span class="line">        speakers = torch.LongTensor([hps.data.spk2id[sid]]).to(device)</span><br><span class="line">        audio = (</span><br><span class="line">            net_g.infer(</span><br><span class="line">                x_tst,</span><br><span class="line">                x_tst_lengths,</span><br><span class="line">                speakers,</span><br><span class="line">                tones,</span><br><span class="line">                lang_ids,</span><br><span class="line">                bert,</span><br><span class="line">                ja_bert,</span><br><span class="line">                sdp_ratio=sdp_ratio,</span><br><span class="line">                noise_scale=noise_scale,</span><br><span class="line">                noise_scale_w=noise_scale_w,</span><br><span class="line">                length_scale=length_scale,</span><br><span class="line">            )[0][0, 0]</span><br><span class="line">            .data.cpu()</span><br><span class="line">            .float()</span><br><span class="line">            .numpy()</span><br><span class="line">        )</span><br><span class="line">        del x_tst, tones, lang_ids, bert, x_tst_lengths, speakers</span><br><span class="line">        return audio</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def tts_fn(</span><br><span class="line">    text, speaker, sdp_ratio, noise_scale, noise_scale_w, length_scale, language</span><br><span class="line">):</span><br><span class="line">    with torch.no_grad():</span><br><span class="line">        audio = infer(</span><br><span class="line">            text,</span><br><span class="line">            sdp_ratio=sdp_ratio,</span><br><span class="line">            noise_scale=noise_scale,</span><br><span class="line">            noise_scale_w=noise_scale_w,</span><br><span class="line">            length_scale=length_scale,</span><br><span class="line">            sid=speaker,</span><br><span class="line">            language= &quot;JP&quot; if is_japanese(text) else &quot;ZH&quot;,</span><br><span class="line">        )</span><br><span class="line">        torch.cuda.empty_cache()</span><br><span class="line">        write(&quot;books/temp.wav&quot;, 44100, audio)</span><br><span class="line">    return &quot;Success&quot;</span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br><span class="line"></span><br><span class="line">@app.route(&#x27;/tts&#x27;)</span><br><span class="line">def tts_api():</span><br><span class="line">    # 从请求中获取参数</span><br><span class="line">    text = request.args.get(&#x27;text&#x27;)</span><br><span class="line">    speaker = request.args.get(&#x27;speaker&#x27;)</span><br><span class="line">    sdp_ratio = float(request.args.get(&#x27;sdp_ratio&#x27;, 0.2))</span><br><span class="line">    noise_scale = float(request.args.get(&#x27;noise_scale&#x27;, 0.6))</span><br><span class="line">    noise_scale_w = float(request.args.get(&#x27;noise_scale_w&#x27;, 0.8))</span><br><span class="line">    length_scale = float(request.args.get(&#x27;length_scale&#x27;, 1))</span><br><span class="line">    </span><br><span class="line">    status = tts_fn(text, speaker=&#x27;つくし&#x27;, sdp_ratio=0.2, noise_scale=0.6, noise_scale_w=0.8, length_scale=1)</span><br><span class="line">    with open(&#x27;books/temp.wav&#x27;,&#x27;rb&#x27;) as bit:</span><br><span class="line">        wav_bytes = bit.read()</span><br><span class="line">    </span><br><span class="line">    headers = &#123;</span><br><span class="line">            &#x27;Content-Type&#x27;: &#x27;audio/wav&#x27;,</span><br><span class="line">            &#x27;Text&#x27;: status.encode(&#x27;utf-8&#x27;),</span><br><span class="line">            &#x27;Access-Control-Allow-Origin&#x27;: &#x27;*&#x27;&#125;</span><br><span class="line">    return wav_bytes, 200, headers</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    parser = argparse.ArgumentParser()</span><br><span class="line">    parser.add_argument(</span><br><span class="line">        &quot;-m&quot;, &quot;--model&quot;, default=&quot;./logs/BangDream/G_47000.pth&quot;, help=&quot;path of your model&quot;</span><br><span class="line">    )</span><br><span class="line">    parser.add_argument(</span><br><span class="line">        &quot;-c&quot;,</span><br><span class="line">        &quot;--config&quot;,</span><br><span class="line">        default=&quot;./logs/BangDream/config.json&quot;,</span><br><span class="line">        help=&quot;path of your config file&quot;,</span><br><span class="line">    )</span><br><span class="line">    parser.add_argument(</span><br><span class="line">        &quot;--share&quot;, default=True, help=&quot;make link public&quot;, action=&quot;store_true&quot;</span><br><span class="line">    )</span><br><span class="line">    parser.add_argument(</span><br><span class="line">        &quot;-d&quot;, &quot;--debug&quot;, action=&quot;store_true&quot;, help=&quot;enable DEBUG-LEVEL log&quot;</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    args = parser.parse_args()</span><br><span class="line">    if args.debug:</span><br><span class="line">        logger.info(&quot;Enable DEBUG-LEVEL log&quot;)</span><br><span class="line">        logging.basicConfig(level=logging.DEBUG)</span><br><span class="line">    hps = utils.get_hparams_from_file(args.config)</span><br><span class="line"></span><br><span class="line">    device = (</span><br><span class="line">        &quot;cuda:0&quot;</span><br><span class="line">        if torch.cuda.is_available()</span><br><span class="line">        else (</span><br><span class="line">            &quot;mps&quot;</span><br><span class="line">            if sys.platform == &quot;darwin&quot; and torch.backends.mps.is_available()</span><br><span class="line">            else &quot;cpu&quot;</span><br><span class="line">        )</span><br><span class="line">    )</span><br><span class="line">    net_g = SynthesizerTrn(</span><br><span class="line">        len(symbols),</span><br><span class="line">        hps.data.filter_length // 2 + 1,</span><br><span class="line">        hps.train.segment_size // hps.data.hop_length,</span><br><span class="line">        n_speakers=hps.data.n_speakers,</span><br><span class="line">        **hps.model,</span><br><span class="line">    ).to(device)</span><br><span class="line">    _ = net_g.eval()</span><br><span class="line"></span><br><span class="line">    _ = utils.load_checkpoint(args.model, net_g, None, skip_optimizer=True)</span><br><span class="line"></span><br><span class="line">    app.run(host=&quot;0.0.0.0&quot;, port=8080)</span><br></pre></td></tr></table></figure>
+<h1 id="样例API-使用说明"><a href="#样例API-使用说明" class="headerlink" title="样例API 使用说明"></a>样例API 使用说明</h1><h2 id="Flask启动代码"><a href="#Flask启动代码" class="headerlink" title="Flask启动代码"></a>Flask启动代码</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br></pre></td><td class="code"><pre><span class="line">import sys, os</span><br><span class="line">import logging</span><br><span class="line">from flask import Flask, request, jsonify</span><br><span class="line">logging.getLogger(&quot;numba&quot;).setLevel(logging.WARNING)</span><br><span class="line">logging.getLogger(&quot;markdown_it&quot;).setLevel(logging.WARNING)</span><br><span class="line">logging.getLogger(&quot;urllib3&quot;).setLevel(logging.WARNING)</span><br><span class="line">logging.getLogger(&quot;matplotlib&quot;).setLevel(logging.WARNING)</span><br><span class="line"></span><br><span class="line">logging.basicConfig(</span><br><span class="line">    level=logging.INFO, format=&quot;| %(name)s | %(levelname)s | %(message)s&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">logger = logging.getLogger(__name__)</span><br><span class="line"></span><br><span class="line">import torch</span><br><span class="line">import argparse</span><br><span class="line">import commons</span><br><span class="line">import utils</span><br><span class="line">from models import SynthesizerTrn</span><br><span class="line">from text.symbols import symbols</span><br><span class="line">from text import cleaned_text_to_sequence, get_bert</span><br><span class="line">from text.cleaner import clean_text</span><br><span class="line">import webbrowser</span><br><span class="line"></span><br><span class="line">import io</span><br><span class="line">from scipy.io.wavfile import write</span><br><span class="line"></span><br><span class="line">net_g = None</span><br><span class="line"></span><br><span class="line">if sys.platform == &quot;darwin&quot; and torch.backends.mps.is_available():</span><br><span class="line">    device = &quot;mps&quot;</span><br><span class="line">    os.environ[&quot;PYTORCH_ENABLE_MPS_FALLBACK&quot;] = &quot;1&quot;</span><br><span class="line">else:</span><br><span class="line">    device = &quot;cuda&quot;</span><br><span class="line"></span><br><span class="line">def is_japanese(string):</span><br><span class="line">        for ch in string:</span><br><span class="line">            if ord(ch) &gt; 0x3040 and ord(ch) &lt; 0x30FF:</span><br><span class="line">                return True</span><br><span class="line">        return False</span><br><span class="line"></span><br><span class="line">def get_text(text, language_str, hps):</span><br><span class="line">    norm_text, phone, tone, word2ph = clean_text(text, language_str)</span><br><span class="line">    phone, tone, language = cleaned_text_to_sequence(phone, tone, language_str)</span><br><span class="line"></span><br><span class="line">    if hps.data.add_blank:</span><br><span class="line">        phone = commons.intersperse(phone, 0)</span><br><span class="line">        tone = commons.intersperse(tone, 0)</span><br><span class="line">        language = commons.intersperse(language, 0)</span><br><span class="line">        for i in range(len(word2ph)):</span><br><span class="line">            word2ph[i] = word2ph[i] * 2</span><br><span class="line">        word2ph[0] += 1</span><br><span class="line">    bert = get_bert(norm_text, word2ph, language_str, device)</span><br><span class="line">    del word2ph</span><br><span class="line">    assert bert.shape[-1] == len(phone), phone</span><br><span class="line"></span><br><span class="line">    if language_str == &quot;ZH&quot;:</span><br><span class="line">        bert = bert</span><br><span class="line">        ja_bert = torch.zeros(768, len(phone))</span><br><span class="line">    elif language_str == &quot;JA&quot;:</span><br><span class="line">        ja_bert = bert</span><br><span class="line">        bert = torch.zeros(1024, len(phone))</span><br><span class="line">    else:</span><br><span class="line">        bert = torch.zeros(1024, len(phone))</span><br><span class="line">        ja_bert = torch.zeros(768, len(phone))</span><br><span class="line"></span><br><span class="line">    assert bert.shape[-1] == len(</span><br><span class="line">        phone</span><br><span class="line">    ), f&quot;Bert seq len &#123;bert.shape[-1]&#125; != &#123;len(phone)&#125;&quot;</span><br><span class="line"></span><br><span class="line">    phone = torch.LongTensor(phone)</span><br><span class="line">    tone = torch.LongTensor(tone)</span><br><span class="line">    language = torch.LongTensor(language)</span><br><span class="line">    return bert, ja_bert, phone, tone, language</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def infer(text, sdp_ratio, noise_scale, noise_scale_w, length_scale, sid, language):</span><br><span class="line">    global net_g</span><br><span class="line">    bert, ja_bert, phones, tones, lang_ids = get_text(text, language, hps)</span><br><span class="line">    with torch.no_grad():</span><br><span class="line">        x_tst = phones.to(device).unsqueeze(0)</span><br><span class="line">        tones = tones.to(device).unsqueeze(0)</span><br><span class="line">        lang_ids = lang_ids.to(device).unsqueeze(0)</span><br><span class="line">        bert = bert.to(device).unsqueeze(0)</span><br><span class="line">        ja_bert = ja_bert.to(device).unsqueeze(0)</span><br><span class="line">        x_tst_lengths = torch.LongTensor([phones.size(0)]).to(device)</span><br><span class="line">        del phones</span><br><span class="line">        speakers = torch.LongTensor([hps.data.spk2id[sid]]).to(device)</span><br><span class="line">        audio = (</span><br><span class="line">            net_g.infer(</span><br><span class="line">                x_tst,</span><br><span class="line">                x_tst_lengths,</span><br><span class="line">                speakers,</span><br><span class="line">                tones,</span><br><span class="line">                lang_ids,</span><br><span class="line">                bert,</span><br><span class="line">                ja_bert,</span><br><span class="line">                sdp_ratio=sdp_ratio,</span><br><span class="line">                noise_scale=noise_scale,</span><br><span class="line">                noise_scale_w=noise_scale_w,</span><br><span class="line">                length_scale=length_scale,</span><br><span class="line">            )[0][0, 0]</span><br><span class="line">            .data.cpu()</span><br><span class="line">            .float()</span><br><span class="line">            .numpy()</span><br><span class="line">        )</span><br><span class="line">        del x_tst, tones, lang_ids, bert, x_tst_lengths, speakers</span><br><span class="line">        return audio</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def tts_fn(</span><br><span class="line">    text, speaker, sdp_ratio, noise_scale, noise_scale_w, length_scale, language</span><br><span class="line">):</span><br><span class="line">    with torch.no_grad():</span><br><span class="line">        audio = infer(</span><br><span class="line">            text,</span><br><span class="line">            sdp_ratio=sdp_ratio,</span><br><span class="line">            noise_scale=noise_scale,</span><br><span class="line">            noise_scale_w=noise_scale_w,</span><br><span class="line">            length_scale=length_scale,</span><br><span class="line">            sid=speaker,</span><br><span class="line">            language= &quot;JP&quot; if is_japanese(text) else &quot;ZH&quot;,</span><br><span class="line">        )</span><br><span class="line">        torch.cuda.empty_cache()</span><br><span class="line">        write(&quot;books/temp.wav&quot;, 44100, audio)</span><br><span class="line">    return &quot;Success&quot;</span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br><span class="line"></span><br><span class="line">@app.route(&#x27;/tts&#x27;)</span><br><span class="line">def tts_api():</span><br><span class="line">    # 从请求中获取参数</span><br><span class="line">    text = request.args.get(&#x27;text&#x27;)</span><br><span class="line">    speaker = request.args.get(&#x27;speaker&#x27;)</span><br><span class="line">    sdp_ratio = float(request.args.get(&#x27;sdp_ratio&#x27;, 0.2))</span><br><span class="line">    noise_scale = float(request.args.get(&#x27;noise_scale&#x27;, 0.6))</span><br><span class="line">    noise_scale_w = float(request.args.get(&#x27;noise_scale_w&#x27;, 0.8))</span><br><span class="line">    length_scale = float(request.args.get(&#x27;length_scale&#x27;, 1))</span><br><span class="line">    </span><br><span class="line">    status = tts_fn(text, speaker=&#x27;つくし&#x27;, sdp_ratio=0.2, noise_scale=0.6, noise_scale_w=0.8, length_scale=1)</span><br><span class="line">    with open(&#x27;books/temp.wav&#x27;,&#x27;rb&#x27;) as bit:</span><br><span class="line">        wav_bytes = bit.read()</span><br><span class="line">    </span><br><span class="line">    headers = &#123;</span><br><span class="line">            &#x27;Content-Type&#x27;: &#x27;audio/wav&#x27;,</span><br><span class="line">            &#x27;Text&#x27;: status.encode(&#x27;utf-8&#x27;)&#125;</span><br><span class="line">    return wav_bytes, 200, headers</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    parser = argparse.ArgumentParser()</span><br><span class="line">    parser.add_argument(</span><br><span class="line">        &quot;-m&quot;, &quot;--model&quot;, default=&quot;./logs/BangDream/G_47000.pth&quot;, help=&quot;path of your model&quot;</span><br><span class="line">    )</span><br><span class="line">    parser.add_argument(</span><br><span class="line">        &quot;-c&quot;,</span><br><span class="line">        &quot;--config&quot;,</span><br><span class="line">        default=&quot;./logs/BangDream/config.json&quot;,</span><br><span class="line">        help=&quot;path of your config file&quot;,</span><br><span class="line">    )</span><br><span class="line">    parser.add_argument(</span><br><span class="line">        &quot;--share&quot;, default=True, help=&quot;make link public&quot;, action=&quot;store_true&quot;</span><br><span class="line">    )</span><br><span class="line">    parser.add_argument(</span><br><span class="line">        &quot;-d&quot;, &quot;--debug&quot;, action=&quot;store_true&quot;, help=&quot;enable DEBUG-LEVEL log&quot;</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    args = parser.parse_args()</span><br><span class="line">    if args.debug:</span><br><span class="line">        logger.info(&quot;Enable DEBUG-LEVEL log&quot;)</span><br><span class="line">        logging.basicConfig(level=logging.DEBUG)</span><br><span class="line">    hps = utils.get_hparams_from_file(args.config)</span><br><span class="line"></span><br><span class="line">    device = (</span><br><span class="line">        &quot;cuda:0&quot;</span><br><span class="line">        if torch.cuda.is_available()</span><br><span class="line">        else (</span><br><span class="line">            &quot;mps&quot;</span><br><span class="line">            if sys.platform == &quot;darwin&quot; and torch.backends.mps.is_available()</span><br><span class="line">            else &quot;cpu&quot;</span><br><span class="line">        )</span><br><span class="line">    )</span><br><span class="line">    net_g = SynthesizerTrn(</span><br><span class="line">        len(symbols),</span><br><span class="line">        hps.data.filter_length // 2 + 1,</span><br><span class="line">        hps.train.segment_size // hps.data.hop_length,</span><br><span class="line">        n_speakers=hps.data.n_speakers,</span><br><span class="line">        **hps.model,</span><br><span class="line">    ).to(device)</span><br><span class="line">    _ = net_g.eval()</span><br><span class="line"></span><br><span class="line">    _ = utils.load_checkpoint(args.model, net_g, None, skip_optimizer=True)</span><br><span class="line"></span><br><span class="line">    app.run(host=&quot;0.0.0.0&quot;, port=8080)</span><br></pre></td></tr></table></figure>
 <h2 id="API-请求路径："><a href="#API-请求路径：" class="headerlink" title="API 请求路径："></a>API 请求路径：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/tts</span><br></pre></td></tr></table></figure>
 <h2 id="请求方法："><a href="#请求方法：" class="headerlink" title="请求方法："></a>请求方法：</h2><p>GET</p>
 <h2 id="请求参数"><a href="#请求参数" class="headerlink" title="请求参数:"></a>请求参数:</h2><p>text (必须) - 您想要转化为语音的文本。<br>speaker (可选) - 选择的发音人，默认为 ‘つくし’。<br>sdp_ratio (可选) - 参数值，默认为 0.2。<br>noise_scale (可选) - 噪音比例，默认为 0.6。<br>noise_scale_w (可选) - 噪音比例宽度，默认为 0.8。<br>length_scale (可选) - 长度比例，默认为 1。</p>
@@ -1045,7 +915,7 @@ document.getElementById('ttsForm').addEventListener('submit', function(e) {
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-09-04 21:23:46" itemprop="dateModified" datetime="2023-09-04T21:23:46+08:00">2023-09-04</time>
+                <time title="修改时间：2023-10-05 19:36:34" itemprop="dateModified" datetime="2023-10-05T19:36:34+08:00">2023-10-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1068,7 +938,138 @@ document.getElementById('ttsForm').addEventListener('submit', function(e) {
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>这个睦素是作者在第12集播出之前写的，看完第12集之后作者甜甜地笑了：是的就是这样，，看似冷漠的soyo才是自觉被辜负而放不下的那一个</p>
+          <form id="ttsForm">
+    <label for="text">日文文本:</label>
+    <textarea id="text" required></textarea><br>
+
+<pre><code>
+    <label for="speaker">说话人:</label>
+    <select id="speaker">
+            <option value="香澄">香澄</option>
+            <option value="有咲">有咲</option>
+            <option value="沙綾">沙綾</option>
+            <option value="りみ">りみ</option>
+            <option value="たえ">たえ</option>
+            <option value="沙綾、りみ、たえ">沙綾、りみ、たえ</option>
+            <option value="巴">巴</option>
+            <option value="一同">一同</option>
+            <option value="まりな">まりな</option>
+            <option value="ゆり">ゆり</option>
+            <option value="ポピパ一同">ポピパ一同</option>
+            <option value="明日香">明日香</option>
+            <option value="？？？">？？？</option>
+            <option value="オーナー">オーナー</option>
+            <option value="全員">全員</option>
+            <option value="Poppin'Party">Poppin'Party</option>
+            <option value="ひまり">ひまり</option>
+            <option value="モカ">モカ</option>
+            <option value="つぐみ">つぐみ</option>
+            <option value="蘭">蘭</option>
+            <option value="リサ">リサ</option>
+            <option value="千聖">千聖</option>
+            <option value="花音">花音</option>
+            <option value="イヴ">イヴ</option>
+            <option value="日菜">日菜</option>
+            <option value="友希那">友希那</option>
+            <option value="紗夜">紗夜</option>
+            <option value="Afterglow">Afterglow</option>
+            <option value="こころ">こころ</option>
+            <option value="美咲">美咲</option>
+            <option value="薫">薫</option>
+            <option value="はぐみ">はぐみ</option>
+            <option value="ミッシェル">ミッシェル</option>
+            <option value="マリー">マリー</option>
+            <option value="怪盗ハロハッピー">怪盗ハロハッピー</option>
+            <option value="ハロー、ハッピーワールド！">ハロー、ハッピーワールド！</option>
+            <option value="ニコリーナ">ニコリーナ</option>
+            <option value="彩">彩</option>
+            <option value="麻弥">麻弥</option>
+            <option value="パスパレ一同">パスパレ一同</option>
+            <option value="燐子">燐子</option>
+            <option value="あこ">あこ</option>
+            <option value="あこのチャット">あこのチャット</option>
+            <option value="燐子のチャット">燐子のチャット</option>
+            <option value="燐子チャット">燐子チャット</option>
+            <option value="Roselia">Roselia</option>
+            <option value="ゆきな">ゆきな</option>
+            <option value="ましろ">ましろ</option>
+            <option value="つくし" selected>つくし</option>
+            <option value="透子">透子</option>
+            <option value="七深">七深</option>
+            <option value="瑠唯">瑠唯</option>
+             <option value="六花">六花</option>
+            <option value="パレオ">パレオ</option>
+            <option value="レイヤ">レイヤ</option>
+            <option value="マスキング">マスキング</option>
+            <option value="チュチュ">チュチュ</option>
+            <option value="ますき">ますき</option>
+            <option value="ロック">ロック</option>
+            <option value="令王那">令王那</option>
+            <option value="CHIYU">CHIYU</option>
+            <option value="レイ">レイ</option>
+            <option value="詩船">詩船</option>
+            <option value="珠手ちゆ">珠手ちゆ</option>
+            <option value="燈">燈</option>
+            <option value="そよ">そよ</option>
+            <option value="祥子">祥子</option>
+            <option value="立希">立希</option>
+            <option value="睦">睦</option>
+            <option value="愛音">愛音</option>
+            <option value="楽奈">楽奈</option>
+            <option value="海鈴">海鈴</option>`
+</select><br>
+
+    <label for="sdp_ratio">SDP 比例:</label>
+    <input type="number" id="sdp_ratio" step="0.1" value="0.2"><br>
+
+    <label for="noise_scale">噪音比例:</label>
+    <input type="number" id="noise_scale" step="0.1" value="0.6"><br>
+
+    <label for="noise_scale_w">噪音比例宽度:</label>
+    <input type="number" id="noise_scale_w" step="0.1" value="0.8"><br>
+
+    <label for="length_scale">长度比例:</label>
+    <input type="number" id="length_scale" step="0.1" value="1"><br>
+
+    <input type="submit" value="生成音频">
+    
+</code></pre>
+</form>
+
+<p><audio id="audioPlayer" controls></audio></p>
+<script>
+document.getElementById('ttsForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var text = document.getElementById('text').value;
+    var speaker = document.getElementById('speaker').value;
+    var sdp_ratio = document.getElementById('sdp_ratio').value;
+    var noise_scale = document.getElementById('noise_scale').value;
+    var noise_scale_w = document.getElementById('noise_scale_w').value;
+    var length_scale = document.getElementById('length_scale').value;
+
+    var url = `https://123.207.67.91:8080/tts?text=${encodeURIComponent(text)}&speaker=${encodeURIComponent(speaker)}&sdp_ratio=${sdp_ratio}&noise_scale=${noise_scale}&noise_scale_w=${noise_scale_w}&length_scale=${length_scale}`;
+
+    fetch(url)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Failed to get response');
+            return response.blob()
+        }
+        return response.blob();
+    })
+    .then(blob => {
+        var urlObject = window.URL || window.webkitURL;
+        var audioURL = urlObject.createObjectURL(blob);
+        document.getElementById('audioPlayer').src = audioURL;
+    })
+    .catch(error => {
+        console.error('Error fetching audio:', error.message);
+        alert('Error: ' + error.message); 
+    });
+});
+</script>
+<p>这个睦素是作者在第12集播出之前写的，看完第12集之后作者甜甜地笑了：是的就是这样，，看似冷漠的soyo才是自觉被辜负而放不下的那一个</p>
 <p>太好吃了请大家都来吃！</p>
 <p>*出于个人喜好使用了“素世”这个译名；包含了一点睦素祥△要素</p>
 <p>↓</p>
